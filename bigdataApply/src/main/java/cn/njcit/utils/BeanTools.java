@@ -6,20 +6,20 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author win7
- * 这是一个工具类,为了测试springboot 中的spring容器注入的bean
+ * @author win7 这是一个工具类,为了测试springboot 中的spring容器注入的bean
  */
 @Configuration
 public class BeanTools implements ApplicationContextAware {
 	public static ApplicationContext applicationContext;
-	   @Value("${spring.datasource.url}")
-	     String dbUrl;
+	@Value("${spring.datasource.url}")
+	String dbUrl;
 
-	    @Value("${spring.datasource.username}")
-	     String username;
+	@Value("${spring.datasource.username}")
+	String username;
 
-	    @Value("${spring.datasource.password}")
-	     String password;
+	@Value("${spring.datasource.password}")
+	String password;
+
 	public static ApplicationContext getApplicationContext() {
 		return applicationContext;
 	}
