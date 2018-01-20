@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.njcit</groupId>
-	<artifactId>bigdataApply</artifactId>
+	<artifactId>apply</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>bigdataApply</name>
+	<name>apply</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -100,7 +100,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>com.example.DemoApplication</mainClass>
+					<mainClass>cn.njcit.Application</mainClass>
 				</configuration>
 				<executions>
 					<execution>
@@ -123,6 +123,22 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+					<include>**/*.xml</include>
+				</includes>
+				<!-- 是否替换资源中的属性 -->
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<!-- <includes> <include>**/*.properties</include> <include>**/*.xml</include> 
+					</includes> <filtering>true</filtering> -->
+			</resource>
+		</resources>
 	</build>
 
 

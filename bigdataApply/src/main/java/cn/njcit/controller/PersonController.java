@@ -1,6 +1,5 @@
 package cn.njcit.controller;
 
-import cn.njcit.dao.TUserMapper;
 import cn.njcit.utils.BeanTools;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonController {
 	@Autowired
 	BeanTools beanTools;
-	@Autowired
-	TUserMapper tUserMapper;
 
 	@RequestMapping("/transaction")
 	@Transactional
@@ -38,7 +35,6 @@ public class PersonController {
 			sb.append(s);
 			sb.append("\r\n");
 		}
-		tUserMapper.selectByPrimaryKey(1);
 		return "hello world";
 	}
 }

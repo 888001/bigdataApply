@@ -4,7 +4,7 @@
 	<classPathEntry location="E:\kaplorworkspace\mysqldriver\mysql-connector-java-5.1.7-bin.jar"/>
   <context id="context1">
   	
-    <jdbcConnection connectionURL="jdbc:mysql://localhost:3306/xd_bigdata_apply" driverClass="com.mysql.jdbc.Driver" password="000000" userId="root" />
+    <jdbcConnection connectionURL="jdbc:mysql://47.95.231.218:3306/competition" driverClass="com.mysql.jdbc.Driver" password="Hu123321.." userId="root" />
     <javaModelGenerator targetPackage="cn.njcit.mapper.model" targetProject="bigdataApply" />
     <sqlMapGenerator targetPackage="cn.njcit.mapper" targetProject="bigdataApply" />
     <javaClientGenerator targetPackage="cn.njcit.dao" targetProject="bigdataApply" type="XMLMAPPER" />
